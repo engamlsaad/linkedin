@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Cairo:wght@700&family=Courgette&family=Fredericka+the+Great&family=Gideon+Roman&family=Inria+Serif:ital,wght@1,300;1,400&family=Jomhuria&family=Kaushan+Script&family=Libre+Baskerville&family=Lobster&family=Lobster+Two&family=Noto+Serif:wght@700&family=Open+Sans:wght@300;500;600;700&family=Playfair+Display:wght@800&family=Poppins:wght@200;300;400;500;600;700;800&family=Raleway:wght@400;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>LinkedIn</title>
+</head>
+<body>
+    <!-- Start Navbar -->
+    <nav class="navbar">
+       <div class="container">
+        <nav class="navbar-left">
+            <a href="#" class="navbar-brand"><img src="images/logo.png"/></a>
+            <div class="input-group">
+                <img src="images/search.png"/>
+                <input type="text" class="form-control" placeholder="Search"/>
+              </div>
+        </nav>
+        <nav class="navbar-center">
+            <a href="#" class="active"><img src="images/home.png"><span>Home</span></a>
+            <a href="#"><img src="images/network.png"><span>My Network</span></a>
+            <a href="#"><img src="images/jobs.png"><span>Jobs</span></a>
+            <a href="#"><img src="images/message.png"><span>Messaging</span></a>
+            <a href="#"><img src="images/notification.png"><span>Notifications</span></a>
+        </nav>
+        <nav class="navbar-right">
+            <div class="dropdown">
+                <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img class="main" src="images/user-1.png"/>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="profile.html">
+                    <div class="head">
+                        <img src="images/user-1.png"/>
+                        <h5>Rayan Walton<br/><span>See Your Profile</span></h5>
+                    </div>
+                  </a>
+                </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                        <div class="items">
+                            <div class="left">
+                                <img src="images/feedback.png"/>
+                                <span>Give Feedback</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                  </a>
+                </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                        <div class="items">
+                            <div class="left">
+                                <img src="images/setting.png"/>
+                                <span>Setting & Privacy</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="#">
+                        <div class="items">
+                            <div class="left">
+                                <img src="images/help.png"/>
+                                <span>Help & Support</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="#">
+                        <div class="items">
+                            <div class="left">
+                                <img src="images/display.png"/>
+                                <span>Display & Accesibility</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="#">
+                        <div class="items">
+                            <div class="left">
+                                <img src="images/logout.png"/>
+                                <span>Logout</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </a>
+                </li>
+                </ul>
+              </div>
+        </nav>
+       </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Start Page -->
+    <section class="page">
+        <div class="container">
+            <div class="left-side">
+                <div class="box">
+                    <img class="img-fluid cover" src="images/cover-pic.png"/>
+                    <div class="box-body">
+                        <img class="user" src="images/user-1.png"/>
+                        <h5>Rayan Walton<br/><span>Web Developer at Microsoft</span></h5>
+                    </div>
+                    <div class="views">
+                        <div class="cont">
+                            <p>Your Profile Views</p>
+                            <span>52</span>
+                        </div>
+                        <div class="cont">
+                            <p>Your Post Views</p>
+                            <span>800</span>
+                        </div>
+                        <div class="cont">
+                            <p>Your Connections</p>
+                            <span>205</span>
+                        </div>
+                    </div>
+                    <hr/>
+                    <div class="end">
+                        <div class="my-items">
+                            <img src="images/items.png"/>
+                            <span>My Items</span>
+                        </div>
+                        <div class="empty"></div>
+                        <div class="Try">
+                            <img src="images/premium.png"/>
+                            <span>Try Premium</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <p class="recent">Recent</p>
+                    <ul class="list-unstyled">
+                        <li>
+                            <img src="images/recent.png"/>
+                            Web Development
+                        </li>
+                        <li>
+                            <img src="images/recent.png"/>
+                            User Interface
+                        </li>
+                        <li>
+                            <img src="images/recent.png"/>
+                            Online Learning
+                        </li>
+                        <li>
+                            <img src="images/recent.png"/>
+                            Learn Online
+                        </li>
+                        <li>
+                            <img src="images/recent.png"/>
+                            Code Better
+                        </li>
+                        <li>
+                            <img src="images/recent.png"/>
+                            Group Learning
+                        </li>
+                    </ul>
+                    <p class="groups">Groups</p>
+                    <ul class="list-unstyled">
+                        <li>
+                            <img src="images/group.png"/>
+                            Web Desgin Group
+                        </li>
+                        <li>
+                            <img src="images/group.png"/>
+                            HTML & CSS Learners
+                        </li>
+                        <li>
+                            <img src="images/group.png"/>
+                            Python & Javascript Group
+                        </li>
+                        <li>
+                            <img src="images/group.png"/>
+                            Learn Coding Online
+                        </li>
+                    </ul>
+                    <p class="hashtag">Hashtag</p>
+                    <ul class="list-unstyled">
+                        <li>
+                            <img src="images/hashtag.png"/>
+                            Webdevelopment
+                        </li>
+                        <li>
+                            <img src="images/hashtag.png"/>
+                            Userinterface
+                        </li>
+                        <li>
+                            <img src="images/hashtag.png"/>
+                            Onlinelearning
+                        </li>
+                    </ul>
+                    <hr/>
+                    <div class="ancor text-center">
+                        <a href="#">Discover More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="center-side">
+                <div class="box">
+                    <div class="input-group">
+                        <img class="username" src="images/user-1.png"/>
+                        <input class="form-control" placeholder="Write a post"/>
+                    </div>  
+                    <div class="group">
+                        <div class="group-items text-center">
+                            <img src="images/photo.png"/>
+                            <span>Photo</span>
+                        </div>
+                        <div class="group-items text-center">
+                            <img src="images/video.png"/>
+                            <span>Video</span>
+                        </div>
+                        <div class="group-items text-center">
+                            <img src="images/event.png"/>
+                            <span>Event</span>
+                        </div>
+                        <div class="group-items post text-center">
+                            <span>Post</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sort">
+                   <hr/>
+                  <p>Sort by:<span>top</span> <img src="images/down-arrow.png"/></p>
+                </div>
+                <div class="contain">
+                    <div class="title">
+                        <img src="images/user-3.png"/>
+                        <h5>Bengamin Leo<br/><p>Founder and CEO at Gellila Group <span></span> Angel invetter<br/>2 hour ago</p></h5>
+                    </div>
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nobis velit in suscipit, nemo quas optio ducimus maxime doloremque, rem voluptatem itaque deserunt quos accusamus.</p>
+                        <img class="img-fluid" src="images/post-image-1.png"/>
+                        <div class="like">
+                            <div class="left-like">
+                                <img src="images/like.png"/>
+                                <img class="love" src="images/love.png"/>
+                                <img class="clap" src="images/clap.png"/>
+                                <span>Abriav Mishra and 75 others</span>
+                            </div>
+                            <div class="right-like">
+                                <span>22 comments</span>
+                                <span>40 Shares</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="share-box">
+                        <div class="share-items">
+                            <img class="use" src="images/user-1.png"/>
+                            <img class="arrow" src="images/down-arrow.png"/>
+                        </div>
+                        <div class="comment">
+                            <img src="images/like.png"/>
+                            <span>Like</span>
+                        </div>
+                        <div class="comment">
+                            <img src="images/comment.png"/>
+                            <span>Comment</span>
+                        </div>
+                        <div class="comment">
+                            <img src="images/share.png"/>
+                            <span>Share</span>
+                        </div>
+                        <div class="comment">
+                            <img src="images/send.png"/>
+                            <span>Send</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contain">
+                    <div class="title">
+                        <img src="images/user-4.png"/>
+                        <h5>Bengamin Leo<br/><p>Founder and CEO at Gellila Group <span></span> Angel invetter<br/>2 hour ago</p></h5>
+                    </div>
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nobis velit in suscipit, nemo quas optio ducimus maxime doloremque, rem voluptatem itaque deserunt quos accusamus.</p>
+                        <img class="img-fluid" src="images/post-image-2.png"/>
+                        <div class="like">
+                            <div class="left-like">
+                                <img src="images/like.png"/>
+                                <img class="love" src="images/love.png"/>
+                                <img class="clap" src="images/clap.png"/>
+                                <span>Abriav Mishra and 75 others</span>
+                            </div>
+                            <div class="right-like">
+                                <span>22 comments</span>
+                                <span>40 Shares</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="share-box">
+                        <div class="share-items">
+                            <img class="use" src="images/user-1.png"/>
+                            <img class="arrow" src="images/down-arrow.png"/>
+                        </div>
+                        <div class="comment">
+                            <img src="images/like.png"/>
+                            <span>Like</span>
+                        </div>
+                        <div class="comment">
+                            <img src="images/comment.png"/>
+                            <span>Comment</span>
+                        </div>
+                        <div class="comment">
+                            <img src="images/share.png"/>
+                            <span>Share</span>
+                        </div>
+                        <div class="comment">
+                            <img src="images/send.png"/>
+                            <span>Send</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contain">
+                    <div class="title">
+                        <img src="images/user-4.png"/>
+                        <h5>Bengamin Leo<br/><p>Founder and CEO at Gellila Group <span></span> Angel invetter<br/>2 hour ago</p></h5>
+                    </div>
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nobis velit in suscipit, nemo quas optio ducimus maxime doloremque, rem voluptatem itaque deserunt quos accusamus.</p>
+                        <img class="img-fluid" src="images/post-image-3.png"/>
+                        <div class="like">
+                            <div class="left-like">
+                                <img src="images/like.png"/>
+                                <img class="love" src="images/love.png"/>
+                                <img class="clap" src="images/clap.png"/>
+                                <span>Abriav Mishra and 75 others</span>
+                            </div>
+                            <div class="right-like">
+                                <span>22 comments</span>
+                                <span>40 Shares</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="share-box">
+                        <div class="share-items">
+                            <img class="use" src="images/user-1.png"/>
+                            <img class="arrow" src="images/down-arrow.png"/>
+                        </div>
+                        <div class="comment">
+                            <img src="images/like.png"/>
+                            <span>Like</span>
+                        </div>
+                        <div class="comment">
+                            <img src="images/comment.png"/>
+                            <span>Comment</span>
+                        </div>
+                        <div class="comment">
+                            <img src="images/share.png"/>
+                            <span>Share</span>
+                        </div>
+                        <div class="comment">
+                            <img src="images/send.png"/>
+                            <span>Send</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contain">
+                    <div class="title">
+                        <img src="images/user-4.png"/>
+                        <h5>Bengamin Leo<br/><p>Founder and CEO at Gellila Group <span></span> Angel invetter<br/>2 hour ago</p></h5>
+                    </div>
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nobis velit in suscipit, nemo quas optio ducimus maxime doloremque, rem voluptatem itaque deserunt quos accusamus.</p>
+                        <img class="img-fluid" src="images/post-image-4.png"/>
+                        <div class="like">
+                            <div class="left-like">
+                                <img src="images/like.png"/>
+                                <img class="love" src="images/love.png"/>
+                                <img class="clap" src="images/clap.png"/>
+                                <span>Abriav Mishra and 75 others</span>
+                            </div>
+                            <div class="right-like">
+                                <span>22 comments</span>
+                                <span>40 Shares</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="share-box">
+                        <div class="share-items">
+                            <img class="use" src="images/user-1.png"/>
+                            <img class="arrow" src="images/down-arrow.png"/>
+                        </div>
+                        <div class="comment">
+                            <img src="images/like.png"/>
+                            <span>Like</span>
+                        </div>
+                        <div class="comment">
+                            <img src="images/comment.png"/>
+                            <span>Comment</span>
+                        </div>
+                        <div class="comment">
+                            <img src="images/share.png"/>
+                            <span>Share</span>
+                        </div>
+                        <div class="comment">
+                            <img src="images/send.png"/>
+                            <span>Send</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="box">
+                    <div class="trend">
+                        <h6>Trending News</h6>
+                        <img src="images/more.png"/>
+                    </div>
+                    <div class="paragraph">
+                        <p>High demand for skilled manpower<br/><span>3d ago'10,934 readers</span></p>
+                        <p>High demand for skilled manpower<br/><span>3d ago'10,934 readers</span></p>
+                        <p>High demand for skilled manpower<br/><span>3d ago'10,934 readers</span></p>
+                        <p>High demand for skilled manpower<br/><span>3d ago'10,934 readers</span></p>
+                        <p>High demand for skilled manpower<br/><span>3d ago'10,934 readers</span></p>
+                    </div>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="info">
+                    <p class="ad">Ad...</p>
+                    <div class="text-info text-center">
+                        <p class="master">Master the 5 pictures of web design</p>
+                        <div class="imgs">
+                            <img class="img" src="images/user-1.png"/>
+                            <img class="mi-logo" src="images/mi-logo.png"/>
+                        </div>
+                        <p class="brand">Brand and Demand in xiocima</p>
+                        <button type="button" class="rounded-pill">Learn More</button>
+                    </div>
+                </div>
+                <div class="acc text-center">About Accissibility Help Center<br/> Privacy Policy Addvertising Get the App</div>
+            </div>
+        </div>
+    </section>
+    <!-- End Page -->
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

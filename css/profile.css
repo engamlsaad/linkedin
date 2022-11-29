@@ -1,0 +1,475 @@
+/* Start Variables */
+:root {
+    --mainColor: #5f5f5f;
+    --secondryColor: #f0f2f5;
+    --mainBackground: #fff;
+    --popularColor: #2196f3;
+    --headerColor: #000;
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #f0f2f5;
+    color: #5f5f5f;
+}
+a {
+    text-decoration: none;
+    color: #5f5f5f;
+}
+/* End Global Rules */
+/* Start Navbar */
+.navbar {
+    background-color: var(--mainBackground);
+    box-shadow: 0rem 0rem 0.5rem 0rem rgba(0, 0, 0, 0.4);
+    padding: 0.1rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+.navbar .navbar-left {
+    display: flex;
+    align-items: center;
+}
+.navbar .navbar-left .navbar-brand img {
+    width: 1.8rem;
+}
+.navbar .navbar-left .input-group {
+    align-items: center;
+    border: 1px solid var(--secondryColor);
+    background-color: var(--secondryColor);
+    border-radius: 30rem;
+    padding: 0rem 0.5rem;
+}
+.navbar .navbar-left .input-group img {
+    width: 0.8rem;
+}
+.navbar .navbar-left .input-group .form-control {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0rem;
+}
+.navbar .navbar-left .input-group .form-control::placeholder {
+    font-size: 0.8rem;
+    color: var(--mainColor);
+}
+.navbar .navbar-left .input-group .form-control:focus {
+    box-shadow: none;
+}
+.navbar .navbar-center a {
+    position: relative;
+}
+.navbar .navbar-center a span {
+    font-size: 0.8rem;
+    margin: 0rem 0.5rem;
+}
+.navbar .navbar-center a::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #2196f3;
+    bottom: -0.8rem;
+    transition: 0.8s;
+}
+.navbar .navbar-center a:hover::before {
+    width: 100%;
+}
+.navbar .navbar-center a.active {
+   position: relative;
+}
+.navbar .navbar-center a.active::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #2196f3;
+    bottom: -0.8rem;
+}
+.navbar .navbar-center a:hover {
+    color: var(--mainColor);
+}
+.navbar .navbar-center a img {
+    width: 1.8rem;
+}
+.navbar .navbar-right .main {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+.dropdown-toggle::after {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: green;
+    border: 0.055rem solid var(--mainBackground);
+    border-radius: 50%;
+    margin-left: -0.8rem;
+    vertical-align: 0.8rem;
+}
+.dropdown-menu[data-bs-popper] {
+    left: -13rem;
+    margin-top: 0.8rem;
+}
+.dropdown-menu {
+    background-color: var(--headerColor);
+    min-width: 15rem;
+    border-radius: 0rem;
+}
+.dropdown-menu li a {
+    transition: 0.5s;
+}
+.dropdown-menu li a:hover {
+    background-color: var(--headerColor);
+    box-shadow: none;
+    color: var(--mainBackground);
+}
+.dropdown-menu li a .head {
+    display: flex;
+    line-height: 1;
+    border-bottom: 2px solid var(--mainColor);
+}
+.dropdown-menu li a .head img {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+}
+.dropdown-menu li a .head h5 {
+    margin-left: 0.5rem;
+    margin-top: 0.2rem;
+    font-size: 1rem;
+    color: var(--mainBackground);
+}
+.dropdown-menu li a .head h5 span  {
+    font-size: 0.8rem;
+    color: var(--mainColor);
+}
+.dropdown-menu li a .items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dropdown-menu li a .items .left img {
+    width: 2rem;
+    margin-right: 0.5rem;
+}
+.dropdown-menu li a .items .left span {
+    font-size: 0.75rem;
+    color: var(--secondryColor);
+}
+.dropdown-menu li a .items svg {
+    color: var(--secondryColor);
+    font-size: 0.6rem;
+}
+@media(max-width: 991px) {
+    .navbar .navbar-left .input-group {
+        border: none;
+        border-radius: 0rem;
+        background-color: transparent;
+    }
+    .navbar .navbar-left .input-group .form-control {
+        display: none;
+    }
+    .navbar .navbar-left .input-group img {
+        width: 1rem;
+        margin-top: 0.5rem;
+        margin-left: -0.5rem;
+    }
+    .navbar .navbar-center a span {
+        display: none;
+    }
+    .navbar .navbar-center a img {
+        width: 2rem;
+        margin: 0rem 0.5rem;
+    }
+}
+/* End Navbar */
+/* Start Profile Page */
+.profile-page {
+    margin: 1rem 0rem;
+}
+.profile-page .container {
+    display: flex;
+}
+.profile-page .container .profile-left {
+    flex-basis: 70%;
+}
+@media(min-width: 767px) and (max-width: 991px) {
+    .profile-page .container .profile-left {
+        flex-basis: 100%;
+    }
+}
+@media(max-width: 767px) {
+    .profile-page .container .profile-left {
+        flex-basis: 100%;
+    }
+    .profile-page .container {
+        flex-wrap: wrap;
+    }
+}
+.profile-page .container .profile-left .box {
+    margin-bottom: 0.5rem;
+    padding-bottom: 1rem;
+    background-color: var(--mainBackground);
+}
+.profile-page .container .profile-left .box .box-body .user {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    position: relative;
+    left: 1rem;
+    top: -2.5rem;
+    border: 2px solid var(--mainBackground);
+}
+.profile-page .container .profile-left .box .box-body h6,
+.profile-page .container .profile-left .box .box-body p {
+    margin-left: 1.5rem;
+}
+.profile-page .container .profile-left .box .box-body h6 {
+    margin-top: -2rem;
+    color: var(--headerColor);
+}
+.profile-page .container .profile-left .box .box-body p {
+    font-size: 0.9rem;
+    margin-top: -0.25rem;
+}
+.profile-page .container .profile-left .box .box-body p a {
+    color: var(--popularColor);
+}
+.profile-page .container .profile-left .box .box-body .usser {
+    margin-left: 1.5rem;
+    font-size: 0.8rem;
+}
+.profile-page .container .profile-left .box .box-body .usser img {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+}
+.profile-page .container .profile-left .box .box-body .ancr {
+    margin: 1rem 0rem 0.5rem 1.5rem;
+    font-size: 0.9rem;
+}
+.profile-page .container .profile-left .box .box-body .ancr a {
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.2rem;
+}
+.profile-page .container .profile-left .box .box-body .ancr .btn-connect {
+    background-color: var(--popularColor);
+    color: var(--mainBackground);
+}
+.profile-page .container .profile-left .box .box-body .ancr .btn-message {
+    background-color: #eee;
+    color: var(--mainColor);
+}
+.profile-page .container .profile-left .box .box-body .ancr a img {
+    width: 1rem;
+}
+.profile-page .container .profile-left .box .box-body .ancr a .message {
+    width: 1.5rem;
+}
+.profile-page .container .profile-left .about {
+    background-color: var(--mainBackground);
+    margin-bottom: 0.5rem;
+    padding: 1.5rem;
+    font-size: 0.8rem;
+}
+.profile-page .container .profile-left .about h6 {
+    color: var(--headerColor);
+}
+.profile-page .container .profile-left .about a {
+    display: block;
+    text-align: right;
+}
+.profile-page .container .profile-left .Experience,
+.profile-page .container .profile-left .education,
+.profile-page .container .profile-left .skills,
+.profile-page .container .profile-left .language {
+    background-color: var(--mainBackground);
+    margin-bottom: 0.5rem;
+    padding: 1.5rem;
+}
+.profile-page .container .profile-left .Experience h6,
+.profile-page .container .profile-left .education h6,
+.profile-page .container .profile-left .skills h6,
+.profile-page .container .profile-left .language h6 {
+    color: var(--headerColor);
+}
+.profile-page .container .profile-left .Experience .comp,
+.profile-page .container .profile-left .education .comp {
+    display: flex;
+}
+.profile-page .container .profile-left .education .comp .img img {
+    width: 2rem;
+}
+.profile-page .container .profile-left .Experience .comp .text,
+.profile-page .container .profile-left .education .comp .text {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+.profile-page .container .profile-left .Experience .comp .text,
+.profile-page .container .profile-left .education .comp .text:not(.tex) {
+    border-bottom: 1px solid #ccc;
+}
+.profile-page .container .profile-left .education .comp .text {
+    flex: 1;
+}
+.profile-page .container .profile-left .Experience .comp .text h5,
+.profile-page .container .profile-left .education .comp .text h5 {
+    font-size: 0.9rem;
+    color: var(--headerColor);
+}
+.profile-page .container .profile-left .Experience .comp .text p,
+.profile-page .container .profile-left .education .comp .text p {
+    font-size: 0.8rem;
+    margin-top: -0.4rem;
+}
+.profile-page .container .profile-left .Experience .comp .text small {
+    display: block;
+    margin-bottom: 0.25rem;
+}
+.profile-page .container .profile-left .Experience a {
+    display: block;
+    text-align: center;
+    color: var(--mainColor);
+    font-size: 0.9rem;
+}
+.profile-page .container .profile-left .Experience a .right-arrow {
+    width: 1rem;
+}
+.profile-page .container .profile-left .skills .skills-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+.profile-page .container .profile-left .skills .skills-items p {
+    border: 1px solid #ccc;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 0.2rem 0.8rem;
+    margin: 1rem 0.25rem 0rem 0.25rem;
+}
+.profile-page .container .profile-left .language .ancr {
+    margin: 1.5rem 0rem;
+    font-size: 0.9rem;
+}
+.profile-page .container .profile-left .language .ancr a {
+    padding: 0.25rem 0.5rem;
+    background-color: #eee;
+    color: var(--mainColor);
+}
+.profile-page .container .profile-left .language .ancr .btn-message {
+    margin-left: 0.25rem;
+}
+.profile-page .container .profile-right {
+    flex-basis: 29%;
+    margin-left: 1rem;
+}
+@media(min-width: 991px) {
+    .profile-page .container .profile-right {
+        position: sticky;
+        top: 3rem;
+        align-self: flex-start;
+        z-index: 100;
+    }
+}
+@media(min-width: 767px) and (max-width: 991px) {
+    .profile-page .container .profile-right {
+        display: none;
+    }
+}
+@media(max-width: 767px) {
+    .profile-page .container .profile-right {
+        flex-basis: 100%;
+        margin-left: 0rem;
+    }
+}
+.profile-page .container .profile-right .info {
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+    background-color: var(--mainBackground);
+}
+.profile-page .container .profile-right .info .ad {
+    text-align: right;
+}
+.profile-page .container .profile-right .info .text-info .master,
+.profile-page .container .profile-right .info .text-info .brand {
+    font-size: 0.8rem;
+    color: var(--mainColor);
+}
+.profile-page .container .profile-right .info .text-info .imgs .img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+.profile-page .container .profile-right .info .text-info .imgs .mi-logo {
+    width: 3rem;
+}
+.profile-page .container .profile-right .info .text-info button {
+    font-size: 0.7rem;
+    background-color: transparent;
+    padding: 0.25rem 0.75rem;
+    border: 1px solid var(--popularColor);
+    color: var(--popularColor);
+    box-shadow: none;
+    outline: none;
+}
+.profile-page .container .profile-right .acc {
+    padding: 1rem;
+    font-size: 0.7rem;
+}
+.profile-page .container .profile-right .box {
+    background-color: var(--mainBackground);
+    padding: 1rem;
+}
+.profile-page .container .profile-right .box .title {
+    font-size: 0.9rem;
+    color: var(--mainColor);
+}
+.profile-page .container .profile-right .box .text {
+    display: flex;
+    margin-bottom: 1rem;
+}
+.profile-page .container .profile-right .box .text img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+.profile-page .container .profile-right .box .text .text-info {
+    margin-left: 0.5rem;
+}
+.profile-page .container .profile-right .box .text .text-info h6 {
+    color: var(--mainColor);
+}
+.profile-page .container .profile-right .box .text .text-info p {
+    color: var(--mainColor);
+    line-height: 1;
+    font-size: 0.8rem;
+}
+.profile-page .container .profile-right .box .text .text-info button {
+    background-color: transparent;
+    padding: 0.1rem 1rem;
+    font-size: 0.9rem;
+    color: var(--mainColor);
+    border: 1px solid var(--mainColor);
+}
+/* End Profile Page */
+/* Start Footer */
+footer p {
+    font-size: 0.8rem;
+}
+footer p img {
+    width: 1rem;
+    margin-right: 0.25rem;
+}
+/* End Footer */
